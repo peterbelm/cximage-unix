@@ -10,22 +10,28 @@ To build as a shared library use scons:
 scons
 ```
 
-To clean:
-
-```shell
-scons -c
-```
-
-To install to /usr/local/lib (you may need to be root):
+To install the shared library to /usr/local/lib and include headers to /usr/local/include (you may need to be root):
 
 ```shell
 scons install
 ```
 
-To uninstall:
+To install just the shared library:
 
 ```shell
-scons -c install
+scons install-lib
+```
+
+To install just the include headers:
+
+```shell
+scons install-lib
+```
+
+To clean up an action:
+
+```shell
+scons -c [install|install-lib|install-inc]
 ```
 
 ## ⚠️ Disclaimer ⚠️
